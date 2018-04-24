@@ -222,7 +222,7 @@ open class Container: NSObject, ChangeObserver {
         }
         
         // Create a new factory.
-        let factory = Factory()
+        let factory = Factory(identifier: "factorys.\(page)")
         _factorys[page] = factory
         return factory
     }
